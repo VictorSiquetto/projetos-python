@@ -1,5 +1,6 @@
 from classes import *
 
+
 def main():
     g1 = Guerreiro("Kratos", 2000)
     m1 = Mago("Harry", 1450)
@@ -11,6 +12,7 @@ def main():
 
     g1.status_personagem()
     m1.status_personagem()
+
 
 if __name__ == "__main__":
     main()

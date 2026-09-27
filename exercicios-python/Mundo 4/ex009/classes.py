@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class BebidaQuente(ABC):
 
     def preparar(self):
@@ -11,7 +12,7 @@ class BebidaQuente(ABC):
 
     def ferver_agua(self):
         print("1. Fervendo agua a 100 graus Celsius.")
-    
+
     @abstractmethod
     def misturar(self):
         pass

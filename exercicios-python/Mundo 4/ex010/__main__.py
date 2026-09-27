@@ -2,6 +2,7 @@ from classes import *
 from rich import *
 from rich.table import Table
 
+
 def main():
     dist = 80
 
@@ -19,6 +20,7 @@ def main():
         tabela.add_row(f"{dist}Km", f"{type(item).__name__}", f"{item.calc_frete()}")
 
     print(tabela)
+
 
 if __name__ == "__main__":
     main()

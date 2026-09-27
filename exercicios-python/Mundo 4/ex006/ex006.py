@@ -1,8 +1,9 @@
 from rich import *
 
+
 class Caneta:
 
-    def __init__(self, cor = "azul"):
+    def __init__(self, cor="azul"):
         match cor.lower().strip():
             case "azul":
                 escolha = "[blue]"
@@ -29,10 +30,11 @@ class Caneta:
         else:
             print(f":prohibited: A {self.cor}caneta[/] esta tampada!")
 
-    def quebrar_linha(self, num = 1):
+    def quebrar_linha(self, num=1):
         for i in range(0, num, 1):
             print()
-        #print("\n" * num, end="")
+        # print("\n" * num, end="")
+
 
 c1 = Caneta("azul")
 c1.escrever("ola")

@@ -1,5 +1,6 @@
 from classes import *
 
+
 def main():
     bebida1 = Cafe()
     bebida1.preparar()

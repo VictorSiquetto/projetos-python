@@ -1,14 +1,14 @@
 from rich import *
 from rich.panel import Panel
 
+
 class ControleRemoto:
     canal_min: int = 1
     canal_max: int = 5
     volume_min: int = 1
     volume_max: int = 5
 
-
-    def __init__(self, canal = 1, volume = 2):
+    def __init__(self, canal=1, volume=2):
         self.ligada: bool = False
         self.volume_atual: int = volume
         self.canal_atual: int = canal
@@ -27,7 +27,9 @@ class ControleRemoto:
                 else:
                     conteudo += f" {canal} "
             conteudo += f"\nVOLUME = "
-            for volume in range(ControleRemoto.volume_min, ControleRemoto.volume_max + 1):
+            for volume in range(
+                ControleRemoto.volume_min, ControleRemoto.volume_max + 1
+            ):
                 if volume <= self.volume_atual:
                     conteudo += f"[black on cyan] [/]"
                 else:
@@ -54,12 +56,11 @@ class ControleRemoto:
             if self.volume_atual != ControleRemoto.volume_max:
                 self.volume_atual += 1
 
-
     def volume_menos(self):
         if self.ligada:
             if self.volume_atual != ControleRemoto.volume_min:
                 self.volume_atual -= 1
-                
+
 
 tv = ControleRemoto()
 while True:

@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Transporte(ABC):
 
     def __init__(self, distancia):
@@ -10,7 +11,7 @@ class Transporte(ABC):
     def calc_frete(self):
         pass
 
-        
+
 class Moto(Transporte):
     fator = 0.5
 
