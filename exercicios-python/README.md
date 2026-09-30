@@ -55,7 +55,3 @@ Os arquivos deste repositório acompanham a sequência de aprendizado dos **Mund
 - Sobrecarga de operadores
 - Projetos e desafios práticos com POO
 - Introdução ao acesso a banco de dados
-
----
-
-> **Observação:** este repositório contém minhas próprias soluções desenvolvidas durante os estudos, com o objetivo de praticar e acompanhar minha evolução no aprendizado de Python.
