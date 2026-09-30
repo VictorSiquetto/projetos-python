@@ -1,7 +1,6 @@
 from classes import Termostato
 
 
-
 def main():
     t1 = Termostato()
     try:
@@ -10,6 +9,7 @@ def main():
         print(erro)
 
     print(f"A temperatura atual é {t1.ftemperatura}")
+
 
 if __name__ == "__main__":
     main()
