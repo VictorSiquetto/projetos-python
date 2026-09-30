@@ -1,28 +1,61 @@
-Python - Curso em Vídeo
+# Python - Curso em Vídeo
 
-Minhas soluções para os exercícios propostos pelo Prof. Gustavo Guanabara no Curso em Vídeo.
+Minhas resoluções dos exercícios e desafios propostos pelo Prof. Gustavo Guanabara no Curso de Python 3 do Curso em Vídeo.
 
-Estrutura do Curso
+Os arquivos deste repositório acompanham a sequência de aprendizado dos **Mundos 1, 2, 3 e 4**, servindo como registro da minha prática e evolução durante o curso.
 
-Mundo 1: Fundamentos
+## Estrutura do Curso
 
-Ex 001 a 002: Primeiros comandos
-Ex 003 a 015: Operadores Aritméticos
-Ex 016 a 021: Módulos e Pacotes (math, random, etc)
-Ex 022 a 027: Manipulação de Texto
-Ex 028 a 035: Estruturas Condicionais (if/else simples)
+### 🌎 Mundo 1 — Fundamentos
 
-Mundo 2: Estruturas de Controle
+**Assuntos abordados:**
+- Primeiros passos com Python
+- Tipos primitivos e saída de dados
+- Variáveis e operações
+- Operadores aritméticos
+- Módulos e bibliotecas
+- Manipulação de textos
+- Estruturas condicionais (`if`, `else`)
+- Cores no terminal
 
-Ex 036 a 045: Condições Aninhadas (if/elif/else)
-Ex 046 a 056: Repetição com 'for'
-Ex 057 a 071: Repetição com 'while'
+### 🌎 Mundo 2 — Estruturas de Controle
 
-Mundo 3: Estruturas Compostas
+**Assuntos abordados:**
+- Condições aninhadas (`if`, `elif`, `else`)
+- Estrutura de repetição `for`
+- Estrutura de repetição `while`
+- Validação de dados
+- Menus e interações
+- Interrupção e controle de repetições
 
-Ex 072 a 077: Tuplas
-Ex 078 a 089: Listas (Parte 1 e 2)
-Ex 090 a 095: Dicionários
-Ex 096 a 106: Funções (Parte 1 e 2)
-Ex 107 a 112: Modularização e Pacotes
-Ex 113 a 115: Tratamento de Erros
+### 🌎 Mundo 3 — Estruturas Compostas
+
+**Assuntos abordados:**
+- Tuplas
+- Listas
+- Listas compostas e matrizes
+- Dicionários
+- Funções
+- Modularização
+- Módulos e pacotes
+- Tratamento de erros e exceções
+
+### 🌎 Mundo 4 — Programação Orientada a Objetos
+
+**Assuntos abordados:**
+- Conceitos de Programação Orientada a Objetos
+- Classes e objetos
+- Atributos e métodos
+- Associação entre objetos
+- Herança
+- Abstração
+- Encapsulamento
+- Getters, setters e `@property`
+- Polimorfismo
+- Sobrecarga de operadores
+- Projetos e desafios práticos com POO
+- Introdução ao acesso a banco de dados
+
+---
+
+> **Observação:** este repositório contém minhas próprias soluções desenvolvidas durante os estudos, com o objetivo de praticar e acompanhar minha evolução no aprendizado de Python.
