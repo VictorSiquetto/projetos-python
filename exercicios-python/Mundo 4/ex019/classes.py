@@ -3,24 +3,26 @@ from abc import ABC, abstractmethod
 
 class Funcionario(ABC):
 
-    def __init__(self, nome: str, salario: float):
+    def __init__(self, nome: str, salario: float = 1600):
         self.nome = nome
-        self._salario = 0
-        self.salario = salario
+        self.__salario = salario
 
     def __str__(self):
-        return f"{self.nome} ganha R${self._salario:.2f} e por ser {self.__class__.__name__} o bonus sera de R${self.calcular_bonus():.2f}"
+        return f"{self.nome} ganha R${self.__salario:.2f} e por ser {self.__class__.__name__} o bonus sera de R${self.calcular_bonus():.2f}"
 
     @property
     def salario(self):
-        return self._salario
+        return self.__salario
 
     @salario.setter
-    def salario(self, valor: float):
-        if valor >= self._salario:
-            self._salario = valor
+    def salario(self, valor: float = None):
+        if valor is None:
+            raise ValueError("Impossivel reajustar o salario sem um valor")
         else:
-            raise ValueError("Voce nao pode diminuir o salario de um funcionario")
+            if valor >= self.__salario:
+                self.__salario = valor
+            else:
+                raise ValueError("Voce nao pode diminuir o salario de um funcionario")
 
     @abstractmethod
     def calcular_bonus(self):
@@ -33,10 +35,7 @@ class Designer(Funcionario):
         super().__init__(nome, salario)
 
     def calcular_bonus(self):
-        bonus = self._salario * 0.08
-        aumento = self._salario + bonus
-        self._salario = aumento
-        return bonus
+        return self.salario * 0.08
 
 
 class Gerente(Funcionario):
@@ -45,10 +44,7 @@ class Gerente(Funcionario):
         super().__init__(nome, salario)
 
     def calcular_bonus(self):
-        bonus = self._salario * 0.15
-        aumento = self._salario + bonus
-        self._salario = aumento
-        return bonus
+        return self.salario * 0.15
 
 
 class Desenvolvedor(Funcionario):
@@ -57,7 +53,4 @@ class Desenvolvedor(Funcionario):
         super().__init__(nome, salario)
 
     def calcular_bonus(self):
-        bonus = self._salario * 0.1
-        aumento = self._salario + bonus
-        self._salario = aumento
-        return bonus
+        return self.salario * 0.1

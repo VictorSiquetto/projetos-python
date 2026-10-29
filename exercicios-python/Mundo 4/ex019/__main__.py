@@ -2,15 +2,19 @@ from classes import *
 
 
 def main():
-    f1 = Designer("Joao", 1500)
-    f2 = Gerente("Ana", 1500)
-    f3 = Desenvolvedor("Carlos", 1500)
+    funcionarios = [
+        Designer("Joao", 1500),
+        Gerente("Ana", 1500),
+        Desenvolvedor("Carlos", 1500),
+    ]
 
-    f2.salario = 2200
+    try:
+        funcionarios[1].salario = 2200
+    except Exception as e:
+        print(f"ERRO: {e}")
 
-    print(f1)
-    print(f2)
-    print(f3)
+    for f in funcionarios:
+        print(f)
 
 
 if __name__ == "__main__":
