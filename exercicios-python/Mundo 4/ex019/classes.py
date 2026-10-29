@@ -31,26 +31,17 @@ class Funcionario(ABC):
 
 class Designer(Funcionario):
 
-    def __init__(self, nome: str, salario: float):
-        super().__init__(nome, salario)
-
     def calcular_bonus(self):
         return self.salario * 0.08
 
 
 class Gerente(Funcionario):
 
-    def __init__(self, nome: str, salario: float):
-        super().__init__(nome, salario)
-
     def calcular_bonus(self):
         return self.salario * 0.15
 
 
 class Desenvolvedor(Funcionario):
-
-    def __init__(self, nome: str, salario: float):
-        super().__init__(nome, salario)
 
     def calcular_bonus(self):
         return self.salario * 0.1
